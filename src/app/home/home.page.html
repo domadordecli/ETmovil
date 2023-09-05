@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <h1>SkeletonAPP</h1>
+  <p>Aquí comienza todo</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+  <h2>Bienvenido!</h2>
+
+  <div class="ipts-login">
+    <ion-list class="lbl-user">
+      <ion-item>
+        <ion-input labelPlacement="stacked">
+          <div slot="label" class="txt-design">Usuario</div>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-list class="lbl-pass">
+      <ion-item>
+        <ion-input labelPlacement="stacked" type="Password">
+          <div slot="label" class="txt-design">Password</div>
+        </ion-input>
+      </ion-item>
+    </ion-list>
   </div>
+
+  <ion-button class="btn-login" expand="block">Ingresar</ion-button>
+  <p>
+    <a [routerLink]="['/login']">CREA TU CUENTA GRATIS</a>
+  </p>
+
 </ion-content>
+
